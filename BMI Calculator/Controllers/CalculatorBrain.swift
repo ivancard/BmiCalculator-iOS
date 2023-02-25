@@ -17,11 +17,11 @@ struct CalculatorBrain {
     }
 
     func getAdvice() -> String {
-        return bmi?.advice ?? ""
+        return bmi?.advice ?? "No advice"
     }
 
     func getColor() -> UIColor {
-        guard let color = bmi?.color else {return UIColor.white}
+        guard let color = bmi?.color else { return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) }
         return color
     }
 
